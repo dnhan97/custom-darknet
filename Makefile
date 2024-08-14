@@ -93,7 +93,7 @@ CPP=g++ -std=c++11
 NVCC=nvcc
 OPTS=-Ofast
 LDFLAGS= -lm -pthread
-COMMON= -Iinclude/ -I3rdparty/stb/include
+COMMON= -Iinclude/ -I3rdparty/stb/include -I/usr/include/opencv4/ 
 CFLAGS=-Wall -Wfatal-errors -Wno-unused-result -Wno-unknown-pragmas -fPIC -rdynamic
 
 ifeq ($(DEBUG), 1)
